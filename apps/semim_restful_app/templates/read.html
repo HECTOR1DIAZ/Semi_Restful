@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Read (One)</title>
+
+    <style>
+        .container {
+            width: 50%;
+            margin-top: 5%;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/shows" class="link">Go Back</a>
+    <div class="container">
+        <h1 class="font-weight-normal">TV Show {{show.id}}</h1>
+        <br>
+        <h4 class="font-weight-normal">Title:</h4>{{show.title}}
+        <br>
+        <h4 class="font-weight-normal">Network:</h4>{{show.network}}
+        <br>
+        <h4 class="font-weight-normal">Release Date:</h4>{{show.release_date}}
+        <br>
+        <h4 class="font-weight-normal">Description:</h4>{{show.description}}
+        <br>
+        <br>
+        <br>
+        <h4 class="font-weight-normal">Last Updated:</h4>{{show.updated_at}}
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Done</button>  <a href="{{show.id}}/edit" class="link">Edit</a> | <a
+            href="/delete/{{show.id}}" class="link">Delete</a>
+
+
+    </div>
+
+</body>
+
+</html>
